@@ -8,7 +8,6 @@ export class GroupNode extends Node {
 }
 
 export function Group(props) {
-    console.log("groups: ", props)
     return (
         <div style={{ backgroundColor: "grey" }}>
             Page

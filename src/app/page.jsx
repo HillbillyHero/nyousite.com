@@ -17,15 +17,19 @@ export default function HomePage() {
 
     const parent1 = new GroupNode();
     const a = new HeroNode();
+    // const b = new HeroNode();
+    console.log(a)
 
     a.parent = parent1.id;
+    // b.parent = parent1.id;
     
     await editor.addNode(parent1);
     await editor.addNode(a);
+    // await editor.addNode(b);
     
     AreaExtensions.zoomAt(area, editor.getNodes());
     
-    area.area.setZoomHandler(new Zoom(0.0));
+    area.area.setZoomHandler(new Zoom(0.03));
     await area.area.zoom(0.5);
   }
 

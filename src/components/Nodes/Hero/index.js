@@ -10,7 +10,10 @@ export class HeroNode extends Node {
 
 export function Hero() {
   return (
-    <div className="bg-white">
+    <div
+      className="bg-white"
+      // style={{ transform: "scale(0.2)"}}
+    >
       <div className="relative isolate pt-14">
         <div
           aria-hidden="true"
